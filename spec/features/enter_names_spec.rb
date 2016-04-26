@@ -12,3 +12,11 @@ feature 'Shows hit points' do
     expect(page).to have_content 'Matt the Champion: 1000 HP'
   end
 end
+
+feature 'Attacks player two (sucker)' do
+  scenario('#session') do
+    sign_in_and_play
+    click_button('Attack!')
+    expect(page).to have_content 'You attacked player 2. Take that you jerk.'
+  end
+end
