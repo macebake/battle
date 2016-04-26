@@ -17,6 +17,7 @@ enable :sessions
   get '/play' do
     @player_1 = session[:player_1]
     @player_2 = session[:player_2]
+    @hit_points = 1000
     erb(:play)
   end
 
