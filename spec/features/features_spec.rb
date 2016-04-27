@@ -7,7 +7,7 @@ feature 'Enter names' do
   end
 end
 
-feature 'see other players hit points' do
+feature "Other player's hit points" do
   scenario 'see how close to winning' do
     sign_in_and_play
     expect(page).to have_content 'Mara: 60HP'
@@ -15,7 +15,7 @@ feature 'see other players hit points' do
 end
 
 feature 'Attacking' do
-  scenario 'Attack player 2' do
+  scenario 'attack player 2' do
     sign_in_and_play
     click_button 'Attack'
     expect(page).to have_content 'Harry attacked Mara'
