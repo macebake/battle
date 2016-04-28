@@ -24,4 +24,11 @@ describe Game do
       game.attack(player_1)
     end
   end
+
+  describe '#switch_turns' do
+    it 'changes the current player' do
+      game.switch_turns
+      expect(game.current_turn).to eq player_2
+    end
+  end
 end
