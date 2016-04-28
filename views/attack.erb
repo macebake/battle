@@ -1,2 +1,2 @@
-<h4><%= @player_1_name %> attacked <%= @player_2_name %> :( </h4>
-<h4><%= @player_2_name %> <%= $player_2.hit_points %> hit points </h4>
+<h4><%= @game.first_player.player_name %> attacked <%= @game.last_player.player_name %> :( </h4>
+<h4><%= @game.last_player.player_name %> <%= @game.last_player.hit_points %> hit points </h4>
