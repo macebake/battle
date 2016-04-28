@@ -21,24 +21,12 @@ enable :sessions
     erb(:play)
   end
 
-post '/attack' do
-  @game = $game
-  @game.attack(@game.last_player)
-  erb(:attack)
-end
-get '/turn1' do
-  @game = $game
-  erb(:turn1)
-end
- post '/turn1' do
-   @game = $game
-  #  @game.attack(@game.first_player)
-   redirect '/play'
- end
- # post '/turn2' do
- #   @game = $game
- #   erb(:turn2)
- # end
+  get '/attack' do
+    @game = $game
+    @game.attack(@game.last_player)
+    erb(:attack)
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
