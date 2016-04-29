@@ -31,7 +31,7 @@ feature 'Switch turns' do
   scenario "harry's turn" do
     sign_in_and_play
     click_button 'Attack'
-    expect(page).to have_content "Mara's turn"
+    expect(page).to have_content "Harry's turn"
   end
 end
 

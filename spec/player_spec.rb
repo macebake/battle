@@ -15,16 +15,4 @@ describe Player do
       expect(mara.hp).to eq described_class::DEFAULT_HP 
     end
   end
-
-  # describe '#reduce_hp' do
-  #   it 'reduces own HP by ten' do
-  #     expect{mara.reduce_hp}.to change{mara.hp}.by -10
-  #   end
-  # end
-
-  # describe '#attack' do
-  #   it 'reduces the HP of the attacked player' do
-  #     expect{mara.attack(harry)}.to change{harry.hp}.by -10
-  #   end
-  # end
 end

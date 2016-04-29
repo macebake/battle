@@ -1,3 +1,8 @@
-<%= $game.player_1.name %> attacked <%= $game.player_2.name %>
+<%= $game.first_player.name %> attacked <%= $game.second_player.name %>
 <br>
-<%= $game.player_2.name %>: <%= $game.player_2.hp %>HP
+<%= $game.second_player.name %>: <%= $game.first_player.hp %>HP
+<%= $game.current_turn.name %>'s turn  
+
+<form action="/play">
+  <input type="submit" value="Ok">
+</form>

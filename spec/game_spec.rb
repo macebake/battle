@@ -2,7 +2,7 @@ require 'game'
 
 describe Game do
   let(:mara)  { double :mara }
-  let(:harry) { double :mara }
+  let(:harry) { double :harry }
   let(:game) { Game.new(harry, mara) }
   before(:each) { allow(harry).to receive(:reduce_hp) {true}}
   before(:each) { allow(harry).to receive(:hp) {Player::DEFAULT_HP - 10}}
@@ -29,3 +29,14 @@ describe Game do
     end
   end
 end
+
+
+
+
+
+
+
+
+
+
+
