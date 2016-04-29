@@ -18,7 +18,7 @@ describe Game do
   describe '#attack' do
     it 'reduces the HP of the attacked player' do
       game.attack(harry)
-      expect(harry.hp).to eq 50 
+      expect(harry.hp).to eq 50
     end
   end
 
@@ -29,14 +29,3 @@ describe Game do
     end
   end
 end
-
-
-
-
-
-
-
-
-
-
-

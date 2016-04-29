@@ -15,10 +15,10 @@ feature "Other player's hit points" do
 end
 
 feature 'Attacking' do
-  scenario 'attack player 2' do
+  scenario 'attack player 1' do
     sign_in_and_play
     click_button 'Attack'
-    expect(page).to have_content 'Harry attacked Mara'
+    expect(page).to have_content 'Mara attacked Harry'
   end
   scenario 'reduce points of player 2' do
     sign_in_and_play
