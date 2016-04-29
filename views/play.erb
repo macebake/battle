@@ -1,6 +1,11 @@
-<%= $game.first_player.name %> vs. <%= $game.second_player.name %>
+<%= $game.player_1.name %> vs. <%= $game.player_2.name %>
 <br>
-<%= $game.second_player.name %>: <%= $game.second_player.hp %>HP
+<%= $game.player_1.name %>: <%= $game.player_1.hp %>HP
+<br>
+<%= $game.player_2.name %>: <%= $game.player_2.hp %>HP
+
+<br>
+<%= $game.current_turn.name %>'s turn
 
 
 <form action="/attack">
